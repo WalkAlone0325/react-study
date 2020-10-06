@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
-import Title from './title'
-import Create from './create'
-import Todos from './todos'
-import State from './state'
+import Title from '../title'
+import Create from '../create'
+import Todos from '../todos'
+import State from '../state'
 import { useSelector } from 'react-redux'
 
-function App() {
+function Todo() {
   let data = useSelector(state => state.todo)
 
   return (
@@ -26,4 +26,4 @@ function App() {
   )
 }
 
-export default App
+export default Todo

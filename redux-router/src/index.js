@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
-import Index from './routes'
+import RouteComp from './routes'
 import './index.css'
 import store from './store'
 import { BrowserRouter } from 'react-router-dom'
@@ -11,8 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <App />
-        <Index />
+        <RouteComp />
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,
