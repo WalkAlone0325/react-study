@@ -83,7 +83,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name]_[contnethash:8].css',
+      filename: 'css/[name]_[contenthash:8].css',
       chunkFilename: '[id].css',
     }),
     new OptimizeCssAssetsWebpackPlugin({
